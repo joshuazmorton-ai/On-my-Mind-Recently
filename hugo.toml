@@ -13,3 +13,6 @@ theme = "vintage-web-hugo-theme"
   HUGO_VERSION = "0.121.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+
+relativeURLs = true
+canonifyURLs = true
