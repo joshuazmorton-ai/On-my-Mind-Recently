@@ -17,3 +17,7 @@ theme = "vintage-web-hugo-theme"
 relativeURLs = true
 canonifyURLs = true
 theme = "vintage-web-hugo-theme"
+
+[params]
+    # This disables the strict security check that often breaks on GitHub Pages
+    Fingerprint = false
