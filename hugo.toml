@@ -1,0 +1,15 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'On my Mind, Recently'
+theme = "vintage-web-hugo-theme"
+[markup.goldmark.renderer]
+  unsafe = true
+
+  [build]
+  command = "hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.121.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"

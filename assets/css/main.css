@@ -1,0 +1,101 @@
+/* --- 1. THE PALETTE: DARK BROWN & FOREST GREEN --- */
+body {
+    background-color: #2b1b12 !important; /* Dark Coffee Brown */
+    background-image: url("/josh-pixel-dance.gif") !important;
+    background-repeat: repeat !important;
+    color: #d2b48c !important; /* Tan Text */
+    font-family: 'Courier New', Courier, monospace !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Tint for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(43, 27, 18, 0.9); 
+    z-index: -1;
+}
+
+/* --- 2. THE OUTER WINDOWS --- */
+.window, .main-column {
+    background-color: #1e2a1e !important; /* Deep Forest Green */
+    border: 1px solid #8b4513 !important; /* Saddle Brown Border */
+    box-shadow: 8px 8px 0px #000000 !important;
+    padding: 30px !important;
+    margin: 20px auto !important;
+    max-width: 95% !important; /* Wide for Grid View */
+}
+
+/* --- 3. THE BOX-WITHIN-A-BOX (The Inner Items) --- */
+/* Targets navigation items and grid post items */
+li, .post-item, article {
+    list-style-type: none !important;
+    background-color: #2a3a2a !important; /* Lighter Forest Green inner box */
+    border: 1px dashed #d2b48c !important; /* Dashed Tan border */
+    margin: 10px 0 !important;
+    padding: 20px !important;
+    box-shadow: 4px 4px 0px #1a1a1a;
+    display: block !important;
+    transition: all 0.2s ease;
+}
+
+li:hover, .post-item:hover {
+    transform: translateY(-3px);
+    border-style: solid !important;
+    background-color: #314431 !important;
+}
+
+/* Fixes the Grid layout to prevent messy overlaps */
+.grid, .post-list {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+    gap: 20px !important;
+    padding: 0 !important;
+}
+
+/* --- 4. WINDOW CONTROLS (FIXED POSITIONS) --- */
+.window-title, .title-bar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: #3e2723 !important; /* Rich Dark Brown Bar */
+    padding: 5px 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.window-controls {
+    display: flex !important;
+    gap: 6px !important;
+}
+
+.window-button {
+    background: #d2b48c !important; /* Tan Buttons */
+    color: #2b1b12 !important;      /* Brown Icons */
+    border: 1px solid #8b4513 !important;
+    width: 20px !important;
+    height: 18px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+}
+
+/* --- 5. TYPEWRITER POETRY EFFECT --- */
+.post-content, .post-summary {
+    display: block !important;
+    overflow: hidden; 
+    white-space: pre-wrap; 
+    border-right: .15em solid #d2b48c; /* Tan blinking cursor */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing { from { max-height: 0; } to { max-height: 2000px; } }
+@keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #d2b48c; } }
+
+/* --- 6. TEXT COLORS & LINKS --- */
+h1, h2, h3 { color: #f5f5dc !important; text-transform: uppercase; }
+a { color: #a2ad91 !important; text-decoration: underline !important; font-weight: bold; }
+a:hover { color: #d2b48c !important; background: #3e2723 !important; }
