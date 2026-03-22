@@ -27,8 +27,8 @@ And I'll pray I'm no statistic, requiem for a dream.
 But joy always flees me and I never know why.  
 I dont know if it's moral to lay down and die.  
 
-It used to all make sense to me, at least I felt I understood
-but im losing my capacity to comprehend the things I should.
-Do I find peace or be the best of me, I can only pick one.
-The best needs my ego, but at peace I need none.
+It used to all make sense to me, at least I felt I understood  
+but im losing my capacity to comprehend the things I should.  
+Do I find peace or be the best of me, I can only pick one.  
+The best needs my ego, but at peace I need none.  
 
