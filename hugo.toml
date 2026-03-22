@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://joshuazmorton-ai.github.io/On-my-Mind-Recently/'
 locale = 'en-us'
 title = 'On my Mind, Recently'
 theme = "vintage-web-hugo-theme"
