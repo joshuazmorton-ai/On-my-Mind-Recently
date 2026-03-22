@@ -16,3 +16,4 @@ theme = "vintage-web-hugo-theme"
 
 relativeURLs = true
 canonifyURLs = true
+theme = "vintage-web-hugo-theme"
